@@ -61,7 +61,7 @@ li {
   margin-bottom: 10px;
   margin-left: 35px;
 }
-h1,
+
 h2,
 h3 {
   color: hwb(190 7% 42%);
@@ -69,10 +69,16 @@ h3 {
   padding: 10px;
   padding-left: 3px;
 }
+h1 {
+  color: hwb(190 7% 42%);
+  font-family: sans-serif;
+
+  margin: 3px;
+}
 .main-header {
   background-color: rgb(252, 240, 211);
 
-  padding: 40px;
+  padding: 10px;
   margin-bottom: 40px;
   /* height: 90px; */
   width: 780px;
@@ -182,21 +188,36 @@ h2::after {
 
   margin-right: 20%;
 }
+
+.clear {
+  clear: both;
+}
 .author-image {
   float: left;
+  margin-bottom: 10px;
 }
 .author {
-  font-style: italic;
   float: left;
   margin-left: 10px;
-  padding-top: 10px;
+  margin-top: 10px;
 }
 h1 {
   float: left;
 }
 nav {
+  margin-top: 10px;
   float: right;
 }
-.clear {
+.clearfix::after {
   clear: both;
+  content: " ";
+  display: block;
+}
+h1,
+h2,
+h3,
+h4,
+p,
+a {
+  font-family: "Poppins", sans-serif;
 }
